@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/metro"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:textSize="30dp"
+        android:textColor="#151414"
+        android:gravity="center"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/etun"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Usename"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:textColorHint="#151414"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etpss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:textColorHint="#151414"
+        android:inputType="textPersonName"
+        android:hint="Password" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="sign up" />
+
+    <Button
+        android:id="@+id/button"
+        android:background="#FFEB3B"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="submit" />
+
+</LinearLayout>

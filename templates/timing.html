@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>manage timings and station</title>
+</head>
+<body>
+<center>
+	<form method="post">
+	<h1>manage timings and station</h1>
+	{% if data['pro'] %}
+	<table>
+		<tr>	
+				<th>station</th>
+				<td><select name="station">
+				{% for row in data['st'] %}
+					<option value="{{row['station_id']}}">{{row['station_name']}}</option>
+				{% endfor %}
+				</select></td>
+			</tr>
+		
+			<tr>
+				<th>arrival time</th>
+				<td><input type="time" name="atime" value="{{data['pro'][0]['atime']}}"></td>
+			</tr>
+			<tr>
+				<th>departure time</th>
+				<td><input type="time" name="dtime" value="{{data['pro'][0]['dtime']}}"></td>
+			</tr>
+			
+			<tr>
+				
+				<td><input type="submit" name="submit"></td>
+			</tr>
+		
+	</table>
+	{% endif %}
+</form>
+<br>
+<br>
+<br>
+<center>
+<h2>time & station view</h2>
+<table class="table" style="width: 600px;color: black">
+		<tr>
+			<td>s1. no</td>
+		
+			<th>arrival time</th>
+			<th>departure time</th>
+			
+			
+			
+			
+		</tr>
+		
+			{% for row in data ['timing']%}
+		
+		<tr>
+			<td>{{loop.index}}</td>
+			<th>{{row['arrival_time']}}</th>
+			<th>{{row['departure_time']}}</th>
+			
+			
+		    <td><a href="?action=delete&id={{row['timing_id']}}">delete</a></td>
+		    <td><a href="?action=update&id={{row['timing_id']}}">update</a></td>	
+		    <td><a href="trip?tid={{row['train_id']}}">trip</a></td>
+		    <td><a href="trip?tid={{row['trip_id']}}">timing</a></td>
+		</tr>
+		</tr>
+		{%endfor%}
+	</table>
+
+</center>
+</center>
+
+</body>
+</html>

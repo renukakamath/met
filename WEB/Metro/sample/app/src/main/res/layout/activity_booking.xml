@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metro"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".booking">
+
+    <TextView
+        android:id="@+id/booking"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:gravity="center"
+        android:text="booking"
+        android:textColor="#151414"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/seat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="number of seats"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:textColorHint="#151414"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:textColorHint="#151414"
+        android:inputType="date"
+        android:hint="date" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:textColorHint="#151414"
+        android:inputType="text"
+        android:hint="status" />
+
+    <Button
+        android:id="@+id/button"
+        android:background="#FFEB3B"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="submit" />
+
+
+</LinearLayout>

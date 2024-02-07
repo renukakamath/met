@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.metro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/metro"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/metro"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Metro"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Usersendmessage"></activity>
+        <activity android:name=".Userviewmaster" />
+        <activity android:name=".Userviewstaff" />
+        <activity android:name=".Userviewbooking" />
+        <activity android:name=".Userbooking" />
+        <activity android:name=".Userviewtrips" />
+        <activity android:name=".Useraddocc" />
+        <activity android:name=".Publicaddfeedback" />
+        <activity android:name=".Userhome" />
+        <activity android:name=".Login" />
+        <activity android:name=".Userregister" />
+        <activity android:name=".Usermakepayment" />
+        <activity android:name=".userviewtrain" />
+        <activity android:name=".Ipsettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".LocationService" />
+    </application>
+
+</manifest>
